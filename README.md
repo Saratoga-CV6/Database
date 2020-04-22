@@ -7,5 +7,8 @@ BlockSite.bat edits the data in the "hosts" file in C:\Windows\System32\drivers\
 `0.0.0.0 [host name]` or `127.0.0.1 [host name]`
 in it.
 
+# Download
+Download ZIP of the repository by clicking `Clone or download` (the green button, for those who are new to Github).
+
 # Note
 This file was made for fun only!
