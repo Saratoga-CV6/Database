@@ -1,21 +1,3 @@
-@ECHO OFF
-REM BFCPEOPTIONSTART
-REM Advanced BAT to EXE Converter www.BatToExeConverter.com
-REM BFCPEEXE=
-REM BFCPEICON=
-REM BFCPEICONINDEX=-1
-REM BFCPEEMBEDDISPLAY=0
-REM BFCPEEMBEDDELETE=1
-REM BFCPEADMINEXE=0
-REM BFCPEINVISEXE=0
-REM BFCPEVERINCLUDE=0
-REM BFCPEVERVERSION=1.0.0.0
-REM BFCPEVERPRODUCT=Product Name
-REM BFCPEVERDESC=Product Description
-REM BFCPEVERCOMPANY=Your Company
-REM BFCPEVERCOPYRIGHT=Copyright Info
-REM BFCPEOPTIONEND
-@ECHO ON
 @echo off
 color a
 setlocal enabledelayedexpansion
@@ -29,6 +11,7 @@ call :check
 echo Blocked Sites:
 for /f "eol=# tokens=1,2 delims= " %%i in (hosts) do (
 if "%%i"=="0.0.0.0" echo %%j
+if "%%i"=="127.0.0.1" echo %%j
 )
 call :check
 echo:
@@ -65,6 +48,7 @@ call :check
 set err=1
 for /f "eol=# tokens=1,2 delims= " %%i in (hosts) do (
 if "%%i %%j"=="0.0.0.0 %input%" set err=0
+if "%%i %%j"=="127.0.0.1 %input%" set err=0
 )
 if "%err%"=="1" (
 echo Site not found in blocklist.
