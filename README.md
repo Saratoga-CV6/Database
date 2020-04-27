@@ -9,7 +9,7 @@ BlockSite.bat edits the data in `C:\Windows\System32\drivers\etc\hosts` by searc
 ## Using GitHub GUI:
 Simply click `Clone or download`, then `Download ZIP`.
 ## From the command line:
-Windows: `> start https://github.com/Saratoga-CV6/WindowsBlockSite/archive/master.zip`.
+Windows: `> start github.com/Saratoga-CV6/WindowsBlockSite/archive/master.zip`.
 
 Linux (I don't know why you want to get this): `$ git clone https://github.com/Saratoga-CV6/WindowsBlockSite`.
 
